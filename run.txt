@@ -1,0 +1,51 @@
+# Результаты запуска автоматизированных тестов
+
+## Окружение
+
+Операционная система: Ubuntu (WSL 2)
+Python: 3.14.4
+Pytest: 9.1.1
+
+## Команда запуска
+
+python -m pytest -q tests/test_student_design.py
+
+## Результат
+
+10 passed, 1 failed
+
+Всего проверок: 11
+Успешных проверок: 10
+Неуспешных проверок: 1
+
+## Анализ результатов
+
+Успешно пройдены:
+- test_ordinary_before_expiration
+- test_ordinary_expiration_boundary
+- test_ordinary_quality_cannot_be_negative
+- test_aged_brie_increases_quality
+- test_aged_brie_quality_limit
+- test_backstage_passes_thresholds (4 параметра)
+- test_sulfuras_does_not_change
+
+Неуспешная проверка:
+- test_conjured_degrades_twice_as_fast
+
+Причина:
+Для Conjured Mana Cake с начальными значениями
+sell_in=5 и quality=10 ожидалось:
+sell_in=4, quality=8.
+
+Фактически получено:
+sell_in=4, quality=9.
+
+Причина расхождения:
+В исходной программе отсутствует отдельная обработка
+товаров Conjured. Применяется обычное уменьшение качества
+на одну единицу вместо двух.
+
+Дефект оформлен в defect.md как DEF-001.
+
+Исходный код приложения не изменялся.
+Учебный тест test_foo не запускался.
