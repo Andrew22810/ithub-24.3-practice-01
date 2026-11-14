@@ -1,0 +1,19 @@
+test_issue_one_microphone (test_start.StartTests.test_issue_one_microphone) ... ok
+test_initial_state (test_student.StudentTests.test_initial_state) ... ok
+test_states_are_independent (test_student.StudentTests.test_states_are_independent) ... ok
+test_valid_quantities (test_student.StudentTests.test_valid_quantities) ...
+  test_valid_quantities (test_student.StudentTests.test_valid_quantities) (quantity='3') ... FAIL
+
+======================================================================
+FAIL: test_valid_quantities (test_student.StudentTests.test_valid_quantities) (quantity='3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ronni/ithub-24.3-practice-01/КТ3_ААА/tests/test_student.py", line 17, in test_valid_quantities
+    self.assertTrue(result["ok"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)

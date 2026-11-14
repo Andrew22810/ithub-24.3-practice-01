@@ -1,0 +1,43 @@
+test_issue_one_microphone (test_start.StartTests.test_issue_one_microphone) ... ok
+test_initial_state (test_student.StudentTests.test_initial_state) ... ok
+test_insufficient_stock_does_not_change_state (test_student.StudentTests.test_insufficient_stock_does_not_change_state) ... FAIL
+test_invalid_quantities_do_not_change_state (test_student.StudentTests.test_invalid_quantities_do_not_change_state) ... ok
+test_repeated_return_does_not_change_state (test_student.StudentTests.test_repeated_return_does_not_change_state) ... FAIL
+test_return_issued_loan (test_student.StudentTests.test_return_issued_loan) ... ok
+test_states_are_independent (test_student.StudentTests.test_states_are_independent) ... ok
+test_successful_issuance_and_next_id (test_student.StudentTests.test_successful_issuance_and_next_id) ... ok
+test_unknown_loan_id_does_not_change_state (test_student.StudentTests.test_unknown_loan_id_does_not_change_state) ... ok
+test_valid_quantities (test_student.StudentTests.test_valid_quantities) ...
+  test_valid_quantities (test_student.StudentTests.test_valid_quantities) (quantity='3') ... FAIL
+
+======================================================================
+FAIL: test_insufficient_stock_does_not_change_state (test_student.StudentTests.test_insufficient_stock_does_not_change_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ronni/ithub-24.3-practice-01/КТ3_ААА/tests/test_student.py", line 78, in test_insufficient_stock_does_not_change_state
+    self.assertFalse(result["ok"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_repeated_return_does_not_change_state (test_student.StudentTests.test_repeated_return_does_not_change_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ronni/ithub-24.3-practice-01/КТ3_ААА/tests/test_student.py", line 24, in test_repeated_return_does_not_change_state
+    self.assertFalse(second_return["ok"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_valid_quantities (test_student.StudentTests.test_valid_quantities) (quantity='3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ronni/ithub-24.3-practice-01/КТ3_ААА/tests/test_student.py", line 107, in test_valid_quantities
+    self.assertTrue(result["ok"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+FAILED (failures=3)
