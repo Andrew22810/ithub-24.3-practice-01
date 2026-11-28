@@ -1,0 +1,14 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  IncidentDesk -> /home/ronni/ithub-24.3-practice-01/KT7-QA/src/IncidentDesk/bin/Debug/net10.0/IncidentDesk.dll
+  IncidentDesk.Tests -> /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/bin/Debug/net10.0/IncidentDesk.Tests.dll
+Test run for /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/bin/Debug/net10.0/IncidentDesk.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.2 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     7, Skipped:     0, Total:     7, Duration: 23 ms - IncidentDesk.Tests.dll (net10.0)
+
+Attachments:
+  /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/TestResults/978db659-86a6-4123-bc49-bd90b2a0563f/coverage.cobertura.xml

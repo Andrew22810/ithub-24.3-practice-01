@@ -1,0 +1,24 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  IncidentDesk -> /home/ronni/ithub-24.3-practice-01/KT7-QA/src/IncidentDesk/bin/Debug/net10.0/IncidentDesk.dll
+  IncidentDesk.Tests -> /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/bin/Debug/net10.0/IncidentDesk.Tests.dll
+Test run for /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/bin/Debug/net10.0/IncidentDesk.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.2 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.17]     IncidentDesk.Tests.ReleaseAuditTests.Reporter_list_does_not_contain_another_authors_incident [FAIL]
+  Failed IncidentDesk.Tests.ReleaseAuditTests.Reporter_list_does_not_contain_another_authors_incident [11 ms]
+  Error Message:
+   Assert.DoesNotContain() Failure: Filter matched in collection
+                                                                                                                                                          ↓ (pos 1)
+Collection: [Incident { Id = 1, Title = Own incident, TeamId = alpha, ReporterId = reporter-a, AssignedResponderId = , Severity = Normal, Status = New }, Incident { Id = 2, Title = Another incident, TeamId = alpha, ReporterId = reporter-b, AssignedResponderId = , Severity = Critical, Status = New }]
+  Stack Trace:
+     at IncidentDesk.Tests.ReleaseAuditTests.Reporter_list_does_not_contain_another_authors_incident() in /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/ReleaseAuditTests.cs:line 21
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+Failed!  - Failed:     1, Passed:    10, Skipped:     0, Total:    11, Duration: 49 ms - IncidentDesk.Tests.dll (net10.0)
+
+Attachments:
+  /home/ronni/ithub-24.3-practice-01/KT7-QA/tests/IncidentDesk.Tests/TestResults/c4fa1395-8a27-414e-a466-ede0e48ff76f/coverage.cobertura.xml
